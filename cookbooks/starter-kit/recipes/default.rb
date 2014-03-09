@@ -1,4 +1,9 @@
+execute "update repositories" do
+  command "apt-get update"
+end
+
 package "git"
+package "ffmpeg"
 
 starterkit = "/home/vagrant/starterkit"
 
